@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Contact</title>
+    <script src="./assets/app.bundle.js"></script>
+</head>
+<body>
+    <header id="navHeader">
+        <nav class="navbar navbar-expand-md absolute-top px-16 py-8 align-content-center">
+            <div class="container d-flex position-relative">
+                <div id="navbar-left" class="collapse navbar-collapse align-items-center">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <label class="switch">
+                                <input id="darkModeSlider" type="checkbox">
+                                <span class="slider round">Dark Mode</span>
+                            </label>
+                       </li>
+                        <li class="nav-item dropdown active">
+                            <a id="dropdown01" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown01">
+                                 <a class="dropdown-item" href="./services.html">Cookie Consulting</a>
+                                 <a class="dropdown-item" href="./services.html">Crumb Salvage</a>
+                                 <a class="dropdown-item" href="./services.html">Dough Design</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                             <a id="dropdown02" href="#" class="nav-link">Work</a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="navbar-brand mx-auto order-1 order-md-3" href="index.html">biscuit</a>
+                <div class="collapse navbar-collapse order-4 order-md-4">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                    <form role="search" class="form-inline">
+                        <input type="text" class="search js-search form-control form-control-rounded mr-sm-2" type="text" title="Enter your search here..." placeholder="Search..." aria-labelledby="search">
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="main pt-3">
+        <div class="container-sm">
+            <div class="row">
+                <div id="contactInfo" class="col-md-6 mx-auto py-3">
+                    <h2 class="display-5 text-center py-4">Contact Us!</h2>
+                    <p class="py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, molestias, fuga unde amet eveniet quas pariatur autem animi ipsa nesciunt beatae! Corrupti sed dolor explicabo ea, amet impedit quod aperiam.</p>
+                    <form id="contactForm" class="my-5">
+                        <div class="form-group">
+                          <label for="formGroupExampleInput">Name</label>
+                          <input name="name" type="text" class="form-control" id="name" placeholder="Name" minlength="2" maxlength="30" required pattern="[a-zA-Z]{2,30}">
+                        </div>
+                        <div class="form-group">
+                          <label for="formGroupExampleInput2">Favourite Cookie</label>
+                          <input type="text" class="form-control" id="favCookie" placeholder="What's your favourite cookie?" pattern="[a-zA-Z]{2,30}">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email Address" required>
+                          </div>
+                          <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="3" maxlength="300" required></textarea>
+                          </div>
+                          <button type="submit" class="btn btn-dark btn-block py-2">Submit</button>
+                      </form>
+                </div>
+            </div>
+        </div>
+        <footer class="text-dark">
+            <div class=" py-3 copy text-center text-muted">
+                © biscuit 2020
+                <br>
+                All rights reserved
+            </div>
+        </footer>
+    </main>
+    <script src="./assets/form.bundle.js"></script>
+    <script src="./assets/darkMode.bundle.js"></script>
+</body>
+</html>
